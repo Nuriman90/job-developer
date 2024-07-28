@@ -2,7 +2,6 @@ import React from 'react';
 import { Footer } from 'flowbite-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faGithub, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom';
 
 const Footers = () => {
     return (

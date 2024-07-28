@@ -1,21 +1,21 @@
 import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from '../../context/GlobalContext';
 
 const TableData = () => {
     const { state, handleFunction } = useContext(GlobalContext)
     const {
-        input, setInput,
+        // input, setInput,
         data, setData,
         fetchStatus, setFetchStatus,
-        currentId, setCurrentId
+        // currentId, setCurrentId
     } = state
 
     const {
         handleDelete,
         handleEdit,
-        handleInput,
-        handleSubmit,
+        // handleInput,
+        // handleSubmit,
         rupiah,
         handleText
     } = handleFunction

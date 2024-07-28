@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
 const Password = () => {
-    const [passwordShown, setPasswordShown] = useState(false);
+    // const [passwordShown, setPasswordShown] = useState(false);
 
     const [input, setInput] = useState({
         current_password: "",
@@ -12,13 +12,13 @@ const Password = () => {
         new_confirm_password: ""
     });
 
-    const togglePassword = () => {
-        setPasswordShown(!passwordShown);
-    };
+    // const togglePassword = () => {
+    //     setPasswordShown(!passwordShown);
+    // };
 
     let navigate = useNavigate();
 
-    const [fetchStatus, setFetchStatus] = useState(true);
+    // const [fetchStatus, setFetchStatus] = useState(true);
 
     const handleInput = (event) => {
         let value = event.target.value;
@@ -41,7 +41,7 @@ const Password = () => {
             },
             { headers: { "Authorization": "Bearer " + Cookies.get('token') } }
         ).then((res) => {
-            setFetchStatus(true);
+            // setFetchStatus(true);
             navigate('/dashboard');
             
         })

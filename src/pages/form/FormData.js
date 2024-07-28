@@ -8,18 +8,11 @@ const FormData = () => {
     const { state, handleFunction } = useContext(GlobalContext)
     const {
         input, setInput,
-        data, setData,
-        fetchStatus, setFetchStatus,
-        currentId, setCurrentId
     } = state
 
     const {
-        handleDelete,
-        handleEdit,
         handleInput,
         handleSubmit,
-        rupiah,
-        handleText
     } = handleFunction
 
     useEffect(() => {
