@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { GlobalContext } from '../../context/GlobalContext';
 import { useParams } from 'react-router-dom';
 
@@ -38,7 +38,7 @@ const FormData = () => {
                     )
                 })
         }
-    }, [IdData,setInput])
+    }, [IdData, setInput])
     // console.log(data)
 
     return (
